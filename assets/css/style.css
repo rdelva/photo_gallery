@@ -1,0 +1,44 @@
+/*--------------------------------------------------
+Base Elements Styles
+----------------------------------------------------*/
+
+*{
+	box-sizing: border-box;
+}
+
+
+ [type="text"]{
+	color:#7f7f7f;
+	padding:1em;
+	border: solid 1px #e5e5e5;
+	border-radius: 5px;
+
+
+}
+
+
+
+/*--------------------------------------------------
+Base Elements Styles
+----------------------------------------------------*/
+
+header,section,footer {
+	padding:1em;
+	text-align: center;
+}
+
+.container {
+	margin: 0 auto;
+	
+}
+
+#images {
+	margin: 0;
+	padding:0;
+
+}
+
+#images li {
+	list-style-type:none;
+	padding:1em  0;
+}
