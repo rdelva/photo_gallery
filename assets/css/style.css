@@ -6,20 +6,30 @@ Base Elements Styles
 	box-sizing: border-box;
 }
 
+img {
+	max-width: 100%;
+}
+
+body {
+ 	color:#7f7f7f;
+}
+
 
  [type="text"]{
-	color:#7f7f7f;
+ 	color:#7f7f7f;
 	padding:1em;
 	border: solid 1px #e5e5e5;
 	border-radius: 5px;
+}
 
-
+.wrapper {
+	height: calc(100vh-50px);
 }
 
 
 
 /*--------------------------------------------------
-Base Elements Styles
+Base Layout Styles
 ----------------------------------------------------*/
 
 header,section,footer {
@@ -29,7 +39,7 @@ header,section,footer {
 
 .container {
 	margin: 0 auto;
-	
+	width: 95%;
 }
 
 #images {
@@ -40,5 +50,73 @@ header,section,footer {
 
 #images li {
 	list-style-type:none;
-	padding:1em  0;
+	margin-bottom: 2em;
 }
+
+ img:hover {
+	-webkit-transform: scale(1);
+
+}
+
+/*--------------------------------------------------
+	Media Queries
+----------------------------------------------------*/
+
+@media  screen and  (min-width:359px ) {
+	
+	section {
+		text-align: center;
+	}
+
+	[type="text"] {
+		width: calc(100vh - 200px);
+	}
+
+	.container {
+
+		width: 90%;
+	}
+
+	#images li {
+		display:inline-block;
+		width: 45%;
+		
+	}
+
+}
+
+@media  screen and  (min-width:769px ) {
+
+	section {
+		text-align: inherit;
+	}
+
+
+	
+	[type="text"] {
+		width: 460px;
+	}
+
+	.container {
+		
+		max-width: 980px;
+		
+	}
+
+	
+	#images li {
+		width: 20%;	
+		margin-right:6%;
+				
+	}
+
+
+	#images li:nth-child(4n) {
+		width: 20%;	
+		margin-right:-6%;
+				
+	}
+
+	
+}
+
