@@ -80,11 +80,6 @@ header,section,footer {
 
 }
 
-
-
-
-
-
 /*--------------------------------------------------
 	Media Queries
 ----------------------------------------------------*/
@@ -93,10 +88,8 @@ header,section,footer {
 	
 	section {
 		text-align: center;
-		
-	}
 
-	
+	}	
 
 	.container {
 
@@ -105,7 +98,8 @@ header,section,footer {
 
 	#images li {
 		display:inline-block;
-		width: 45%;
+		width: 40%;
+		
 				
 	}
 
@@ -130,7 +124,7 @@ header,section,footer {
 	
 	#images li {
 		width: 17%;	
-		margin-right:6%;
+		margin-right:60px;
 
 				
 	}
