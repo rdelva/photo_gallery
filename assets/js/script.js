@@ -4,7 +4,7 @@ function stickyHeader(){
 	//1. 
 	$(document).on("scroll", function(){
 
-		if($(document).scrollTop() > 85) {
+		if($(document).scrollTop() > 0) {
 
 			$("header").addClass("sticky");
 		} else {
@@ -22,7 +22,7 @@ lightbox.option({
 	'resizeDuration': 200,
      'wrapAround': true,
      'maxWidth' : 1000,
-     'showImageNumberLabel': false
+     'showImageNumberLabel': false,
  
 })
 

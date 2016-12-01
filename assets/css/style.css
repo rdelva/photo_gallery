@@ -24,9 +24,9 @@ body {
 
 }
 
-#wrapper {
+.wrapper {
 	min-height: calc(100vh - 50px);
-	margin-top:1em; 
+	margin-top:1em;
 }
 
 #images {
@@ -93,6 +93,7 @@ header,section,footer {
 	
 	section {
 		text-align: center;
+		
 	}
 
 	
@@ -105,8 +106,7 @@ header,section,footer {
 	#images li {
 		display:inline-block;
 		width: 45%;
-		margin-left:10px;
-		
+				
 	}
 
 }
@@ -114,10 +114,8 @@ header,section,footer {
 @media  screen and  (min-width:769px ) {
 
 	section {
-		text-align: inherit;
+		text-align: center;
 	}
-
-
 	
 	[type="text"] {
 		width: 460px;
@@ -131,19 +129,11 @@ header,section,footer {
 
 	
 	#images li {
-		width: 20%;	
+		width: 17%;	
 		margin-right:6%;
 
 				
 	}
-
-
-	#images li:nth-child(4n) {
-		width: 20%;	
-		margin-right:-6%;
-				
-	}
-
 	
 }
 
