@@ -4,7 +4,7 @@ function stickyHeader(){
 	//1. 
 	$(document).on("scroll", function(){
 
-		if($(document).scrollTop() > 85 ) {
+		if($(document).scrollTop() > 85) {
 
 			$("header").addClass("sticky");
 		} else {
