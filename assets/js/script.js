@@ -26,7 +26,7 @@ lightbox.option({
  
 })
 
-//HideSeek-
+//HideSeek
 
 $(document).ready(function() {
 	$('#search').hideseek({
