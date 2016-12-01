@@ -1,75 +1,43 @@
-//trigger even when scroll moves past the height of header
-var $overlay = $("<div id='overlay'></div>");
-var $image = $("<img>");
-var $caption = $("<p id='caption'></p>");
-var $rightArrow = $("<img src='assets/img/rightArrow.png' id='rightArrow'>");
-var $leftArrow = $("<img src='assets/img/leftArrow.png' id='leftArrow'>");
+//Sticky Header
 
+function stickyHeader(){
+	//1. 
+	$(document).on("scroll", function(){
 
-$overlay.append($image);
-$("body").append($overlay);
-$overlay.append($caption);
-$overlay.append($rightArrow);
-$overlay.append($leftArrow);
+		if($(document).scrollTop() > 85 ) {
 
-
-$(document).on("scroll", function(){
-
-	if ($(document).scrollTop() > 0) {  //if scrollTop is more than zero trigger the sticky class
-		$("header").addClass("sticky");
+			$("header").addClass("sticky");
 		} else {
 			$("header").removeClass("sticky");
-		}
+			}
+
+	});
+}
+
+stickyHeader();
+
+
+//Lightbox
+lightbox.option({
+	'resizeDuration': 200,
+     'wrapAround': true,
+     'maxWidth' : 1000,
+     'showImageNumberLabel': false
+ 
+})
+
+//HideSeek-
+
+$(document).ready(function() {
+	$('#search').hideseek({
+	      list:           '.hideseek-data',
+	      nodata:         '',
+	      attribute:      'data-alt',
+	      highlight:      false,
+	      ignore:         '',
+	      navigation:     false,
+	      ignore_accents: false
+	});
 });
 
-//1. select an image
-$("#images a").click(function(e){
-	
-	e.preventDefault();
-	var link;
-	var ctext;
-	//2. look at the anchor tag and grab the link 
-	 link =  $(this).attr("href");
-	 ctext = $(this).children("img").attr("alt");
-	 $image.attr("src", link);
-	 $caption.text(ctext);
 
-	 $overlay.show();
-	
-});
-
-$overlay.click(function(){
-	$overlay.hide();
-});
-
-
-//Search function 
-
-
-
-function captionList() {
-
-
-	var item = document.querySelectorAll("#images img");
-
-
-	/*var clist;
-	clist = $("#images").children("img").toArray();
-
-	*/
-
-	return item;
-
-}	
-
-console.log(captionList());
-
-
-$("#search").on("keypress", function(){
-
-
-		
-		
-
-
-});
